@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+.c{
+    color:hsl(0, 0%, 98%) ;
+    color: hsl(236, 33%, 92%);
+    color:hsl(233, 11%, 84%) ;
+
+    color: hsl(237, 14%, 26%);
+    color: hsl(233, 14%, 35%);
+    color: hsl(234, 11%, 52%);
+    color: hsl(234, 39%, 85%);
+}
+
+
+
+
