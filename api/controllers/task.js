@@ -15,11 +15,11 @@ const addTask = (req, res) => {
     const { body } = req;
 
     const values = [body.task, body.active];
-    const query = "INSERT INTO task (task, active) VALUES($1, $2)";
+    const query = "INSERT INTO task (task, active) VALUES($1, $2) RETURNING *";
 
     db.query(query, values, (err, data) => {
         if (err) return res.status(500).json(err.stack);
-        return res.status(200).json("Tarea agregada correctamente");
+        return res.status(200).json(data.rows[0]);
     });
 };
 
