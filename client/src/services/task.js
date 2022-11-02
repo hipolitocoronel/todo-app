@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "/api/tasks";
+const baseUrl = "https://todo-app-hipo.herokuapp.com/api/tasks";
 
 const getAll = () => {
     const request = axios.get(baseUrl);
