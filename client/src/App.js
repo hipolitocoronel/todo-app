@@ -46,7 +46,7 @@ function App() {
     const updateTask = (task) => {
         const { id } = task;
         taskService
-            .update(id, task)
+            .update(task)
             .then((returnedTask) =>
                 setTasks(
                     tasks.map((task) => (task.id !== id ? task : returnedTask))
